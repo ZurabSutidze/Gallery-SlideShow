@@ -5,6 +5,9 @@ import Modal from './modal';
 const Info = () => {
     const [bool , Setbool] = useState(false)
     const { state } = useLocation();
+    const handleClick = () => {
+        Setbool((prevBool) => !prevBool);
+      };
 
     return (
         <>
@@ -39,7 +42,9 @@ const Info = () => {
                     </div>
                 </div>
 
-                {bool ? <Modal img={state.images.hero.small} fuct="Setbool(false)"/> : null}
+                {bool ? <Modal img={state.images.hero.small} fuct={() => handleClick()} /> : null}
+                {bool ? <p className='text-black text-2xl absolute z-1000 bottom-[10%] left-[90%]' onClick={()=>Setbool(false)}> Close</p> : null}
+           
                 
             </section>
             
