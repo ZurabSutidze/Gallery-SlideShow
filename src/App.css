@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+  }
+
+  .zuka{
+    background-color: rgb(255, 255 , 255 , 0.6);
+  }
+  
+  body{
+    font-family:Libre Baskerville;
+    overflow-x: hidden;
+  }
+
+
+  .Starry{
+    grid-area: pirveli;
+   }
+ 
+   .Girl{
+     grid-area: meore;
+   }
+ 
+   .Guernica{
+     grid-area: mesame;
+   }
+ 
+   .Penitent{
+     grid-area: meotxe;
+   }
+ 
+   .Storm{
+     grid-area: mexute;
+   }
+ 
+   .Great{
+     grid-area: meeqvse;
+   }
+ 
+   .Van{
+     grid-area: meshvide;
+   }
+ 
+   .Sleeping{
+     grid-area: merve;
+   }
+ 
+   .Lady{
+     grid-area: mecxre;
+   }
+ 
+   .night{
+     grid-area: ati;
+   }
+ 
+   .Boy{
+     grid-area: tertmeti;
+   }
+ 
+   .Basket{
+     grid-area: metormete;
+   }
+ 
+   .Mona{
+     grid-area: mecamete;
+   }
+
+   .arnolfini{
+     grid-area: metotxmete;
+   }
+
+   .Swing{
+     grid-area: metxutmete;
+   }
+
+  @media (width >= 768px){
+    .zuraba{
+      display: grid;
+      grid-template-areas:  "pirveli meore"
+                            "mesame meore"
+                            "mesame meotxe"
+                            "mexute meotxe"
+                            "mexute meeqvse"
+                            "meshvide merve"
+                            "meshvide ati"
+                            "mecxre ati"
+                            "tertmeti metormete"
+                            "mecamete metormete"
+                            "mecamete metotxmete"
+                            "mecamete metxutmete"
+    }
+    .zuraba{
+      margin-bottom: 0;
+    }
+  }
+
+ 
+  @media (width >= 1440px){
+
+    .zuraba{
+      grid-template-areas: "pirveli meore mesame meotxe"
+                            "mexute meore meshvide merve"
+                            "mexute meeqvse meshvide merve"
+                            "mexute meeqvse meshvide merve"
+                            "mecxre ati mecamete metormete"
+                            "mecxre ati mecamete metormete"
+                            "tertmeti metotxmete mecamete metxutmete"
+    }
+
+    .Guernica{
+      grid-area: mesame;
+      position: relative;
+      top: 17px;
+    }
+
+    .Storm{
+      grid-area: mexute;
+      position: relative;
+      bottom: 60px;
+    }
+
+    .Great{
+      grid-area: meeqvse;
+      position: relative;
+      bottom: 10px;
+    }
+
+    .Van{
+      grid-area: meshvide;
+      position: relative;
+      top: 60px;
+    }
+  
+    .Sleeping{
+      grid-area: merve;
+      position: relative;
+      bottom: 110px;
+    }
+
+    .Lady{
+      grid-area: mecxre;
+      position: relative;
+      bottom: 100px;
+    }
+
+    .Boy{
+      grid-area: tertmeti;
+      position: relative;
+      bottom: 117px;
+    }
+  
+    .Arnolfini{
+      grid-area: metotxmete;
+      position: relative;
+      bottom: 150px;
+    }
+
+    .Mona{
+      grid-area: mecamete;
+      position: relative;
+      bottom: 23px;
+    }
+
+    .Basket{
+      grid-area: metormete;
+      position: relative;
+      bottom: 190px;
+    }
+
+    .Swing{
+      grid-area: metxutmete;
+      position: relative;
+      bottom: 155px;
+    }
+
+  }
